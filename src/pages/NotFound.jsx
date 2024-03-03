@@ -2,6 +2,6 @@ import React from 'react'
 
 export const NotFound = () => {
   return (
-    <div>NotFound</div>
+    <div>Az oldal nem található</div>
   )
 }

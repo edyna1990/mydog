@@ -1,3 +1,95 @@
 .MuiPaper-root{
     background-color: rgb(201, 174, 179)!important;
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.active{
+    border-bottom: 1px dotted black;
+}
+a{
+    text-decoration: none!important;
+}
+.createPost{
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px gray;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.imgPost{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+.categ{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.MuiRadio-colorPrimary{
+    color: rgb(201, 174, 179)!important;
+}
+.MuiFormLabel-colorPrimary{
+    color: rgb(201, 174, 179)!important;
+}
+.MuiButton-textPrimary{
+    color: rgb(103, 75, 75)!important;
+    font-weight: bold!important;
+}
+.time{
+    font-style: italic!important;
+}
+.btn-primary{
+    background-color:  rgb(201, 174, 179)!important;
+    border: none!important;
+    margin-bottom: 15px;
+}
+.text-space{
+    text-align: justify!important;
+}
+.cardtext{
+    text-align: justify!important;   
+}
+.MuiButton-containedPrimary{
+    background-color:  rgb(201, 174, 179)!important;
+    border: none!important;
+}
+.pwstyle{
+    color: rgb(201, 174, 179)!important;
+    font-weight: bold!important;
+    text-decoration: none!important;
+}
+input{
+    border: 1px solid rgb(201, 174, 179)!important;
+}
+.imagebtn{
+    background-color:  rgb(201, 174, 179)!important;
+    border: none!important;
+    width: 200px;
+}
+.uploadimg{
+    color:  rgb(201, 174, 179)!important;
+    border: none!important;
+}
+.MuiBox-root.img{
+    justify-content: left!important;
+    display: flex!important;
+    flex-wrap: wrap!important;
+    border: 1px solid black;
+}
+.MuiInputBase-root:after {
+    border-color: rgb(201, 174, 179)!important;
+}
+.MuiMenu-list a {
+    color: #fff;
+}
+.MuiOutlinedInput-notchedOutline {
+    border-color: rgb(201, 174, 179)!important;
+}
+.dogDetails > div {
+    font-family: 'Courier New', Courier, monospace;
+}
