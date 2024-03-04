@@ -19,9 +19,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const pages = [{ path: "/", name: "Home" }];
-const settings = [
-  { path: "/", name: "Logout" },
-];
+const settings = [{ path: "/", name: "Logout" }];
 
 export const Navbar = () => {
   const [navPages, setNavPages] = useState(pages);
@@ -97,6 +95,39 @@ export const Navbar = () => {
                   </MenuItem>
                 </NavLink>
               ))}
+              {!user ? (
+                <>
+                  <NavLink to="signupin/up" onClick={handleCloseNavMenu}>
+                    <MenuItem>
+                      <Typography textAlign="center">Regisztráció</Typography>
+                    </MenuItem>
+                  </NavLink>
+                  <NavLink to="signupin/in" onClick={handleCloseNavMenu}>
+                    <MenuItem>
+                      <Typography textAlign="center">Bejelentkezés</Typography>
+                    </MenuItem>
+                  </NavLink>
+                </>
+              ) : (
+                <>
+                  {settings.map((obj) => (
+                    <NavLink key={obj.name} to={obj.path}>
+                      <MenuItem key={obj.name} onClick={handleCloseNavMenu}>
+                        <Typography
+                          textAlign="center"
+                          onClick={() =>
+                            obj.name == "Logout"
+                              ? logoutUser()
+                              : navigate(obj.path)
+                          }
+                        >
+                          {obj.name}
+                        </Typography>
+                      </MenuItem>
+                    </NavLink>
+                  ))}
+                </>
+              )}
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
