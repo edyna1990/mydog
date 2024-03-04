@@ -11,7 +11,6 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import { NavLink } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 import { useContext } from "react";
@@ -21,7 +20,6 @@ import { useEffect } from "react";
 
 const pages = [{ path: "/", name: "Home" }];
 const settings = [
-  { path: "profile", name: "Profile" },
   { path: "/", name: "Logout" },
 ];
 
@@ -128,7 +126,7 @@ export const Navbar = () => {
                     onClick={handleCloseNavMenu}
                     sx={{ color: "white", display: "block" }}
                   >
-                    Sign Up
+                    Regisztráció
                   </Button>
                 </NavLink>
               </Box>
@@ -142,7 +140,7 @@ export const Navbar = () => {
                     onClick={handleCloseNavMenu}
                     sx={{ color: "white", display: "block" }}
                   >
-                    Sign In
+                    Bejelentkezés
                   </Button>
                 </NavLink>
               </Box>

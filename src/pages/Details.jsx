@@ -27,6 +27,15 @@ export const Details = () => {
       <div style={{margin:"10px 0"}}>
         <b>Szőrzet: </b>{post && parse(post.szorzetek)}
       </div>
+      <div style={{margin:"10px 0"}}>
+        <b>Energia: </b>{post && parse(post.energiak)}
+      </div>
+      <div style={{margin:"10px 0"}}>
+        <b>Intelligencia: </b>{post && parse(post.intelligenciak)}
+      </div>
+      <div style={{margin:"10px 0"}}>
+        <b>Szociális igény: </b>{post && parse(post.szocialisigenyek)}
+      </div>
       <div className='text-space' style={{display:"flex", marginTop:"10px", fontFamily: "'Courier New', Courier, monospace"}}>
         {post && parse(post.description)}
       </div>

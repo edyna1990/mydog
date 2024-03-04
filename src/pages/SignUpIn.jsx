@@ -76,7 +76,7 @@ export const SignUpIn = () => {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            {param.type == "up" ? "Sign Up" : "Sign In"}
+            {param.type == "up" ? "Regisztráció" : "Bejelentkezés"}
           </Typography>
           <Box
             component="form"
@@ -110,7 +110,7 @@ export const SignUpIn = () => {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              {param.type == "up" ? "Sign Up" : "Sign In"}
+              {param.type == "up" ? "Regisztráció" : "Bejelentkezés"}
             </Button>
             {forgotten}
           </Box>

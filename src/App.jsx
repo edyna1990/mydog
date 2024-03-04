@@ -7,7 +7,6 @@ import { SignUpIn } from './pages/SignUpIn'
 import { Details } from './pages/Details'
 import { PwReset } from './pages/PwReset'
 import { NotFound } from './pages/NotFound'
-import { Profile } from './pages/Profile'
 import { Navbar } from './components/Navbar'
 import { UserProvider } from './context/UserContext'
 import { AddPost } from './pages/AddPost'
@@ -36,7 +35,6 @@ function App() {
                     <Route path='signupin/:type' element={<SignUpIn/>}/>
                     <Route path='details/:id' element={<Details/>}/>
                     <Route path='pwreset' element={<PwReset/>}/>
-                    <Route path='profile' element={<Profile/>}/>
                     <Route path='*' element={<NotFound/>}/>
                   </Routes>
                 </div>
